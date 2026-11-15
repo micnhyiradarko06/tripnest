@@ -20,19 +20,20 @@
   <section class="hero">
     <h1>Find your next destination</h1>
     <p>Browse places in Ghana and abroad.</p>
-    <input type="search" id="search" placeholder="Search by place or country">
+
+    <input type="search" id="search" placeholder="Search by place or country" aria-label="Search destinations">
+    <select id="region" aria-label="Filter by region"></select>
+    <select id="category" aria-label="Filter by type"></select>
   </section>
 
   <main>
-    <div id="grid">
-      <a href="#" class="card">
-        <h3>Cape Coast Castle</h3>
-        <p>Ghana</p>
-      </a>
-    </div>
+    <p id="results-info"></p>
+    <div id="grid"></div>
   </main>
 
   <footer>TripNest · Discover. Plan. Stay. Explore.</footer>
 
+  <script src="js/data.js"></script>
+  <script src="js/destinations.js"></script>
 </body>
 </html>
